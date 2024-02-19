@@ -1,0 +1,34 @@
+Different flavor of Sys-Clk - **2.0.0b7**:
+**b7**:
+- Added soc voltage
+- Vdd2 on erista shows more decimal points
+- Fixed touch to select frequency fatal
+- Manager now updates thermals/power live
+- Updated libnx
+**b6**:
+- Added ram load all/cpu in context. api is now version 4.
+- Fixed an edge case getting wrong clock when swapping profiles (apm quirk) (game -> home -> game)
+**b5**:
+- Added config (`do_not_override_boost_gpu`) to allow enabling boost gpu override. default is 1 so enabled.
+ Behavior up to b4 was like it was a 0 so disabled - GPU was overridden in boost mode
+- Fixed a visual issue where it could print voltages as 0 in some rare cases
+- Mitigated an APM -> PCV race condition
+- Sysclk context is now fully compatible with Sys-Clk-2.0.0
+**b4**:
+- Built with latest libnx (more compatibility with HOS 17.0.0)
+- Fixed a clock manage check
+- Now in a zipped archive because ms defender likes to be funny about 7z
+**b3**:
+- Fixed broken real freq for cpu when too high for max voltage
+- Fully fixed voltage bug (for all cases)
+**b1-2**:
+- What official sysclk has (Battery now/avg and dynamic freq table)
+- CPU/GPU/VDD2/VDDQ voltages (always correct info)
+- Fixed dvfs bug (voltage bug)
+- Boost manage (doesn't allow it to be overridden if user freq is lower than boost)
+- Restores freq on dont override setting
+- Working handheld higher limit for gpu on mariko
+- Higher limit of gpu for usb charging for mariko
+- Config to unrestrict handheld gpu completely, set `unrestricted_handheld_clocks=1`
+(In this sysclk, like official one, only handheld gpu can be capped)
+
