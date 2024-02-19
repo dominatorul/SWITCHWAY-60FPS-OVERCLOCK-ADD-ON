@@ -30,7 +30,7 @@ This repository contains an add-on that is designed to work seamlessly with the 
 
 ## Usage
 
-Follow this guide to update your switch https://switchway.net/update-atmosphere/. Once installed, integrate this add-on to enhance your Nintendo Switch functionality.
+Follow this guide to update your switch https://switchway.net/update-atmosphere. Once installed, integrate this add-on to enhance your Nintendo Switch functionality.
 
 ## Credits
 
